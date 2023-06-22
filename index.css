@@ -1,0 +1,202 @@
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+.main_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one_div {
+    background-color: darkred;
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_div {
+    background-color: yellow;
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third_div {
+    background-color: lightblue;
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parceles {
+    height: 100px;
+    overflow-y: scroll;
+    display:flex;
+    flex-direction: row;
+}
+.parcel_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parcel_div button{
+    width: 7rem;
+    height: 1.5rem;
+}
+.parcel_div label{
+    margin-left: 1.4rem;
+}
+#add-container input,
+#add-container select,
+#add-container button {
+    margin-right: 10px;
+}
+#add-container {
+    margin-bottom: 20px;
+}
+.parcel {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.parcel.selected {
+    background-color: yellow;
+}
+
+#selected-parcel-container {
+    margin-top: 20px;
+}
+
+#selected-parcel {
+    font-weight: bold;
+    text-align: center;
+}
+#parcels-container {
+    max-height: 300px;
+    overflow-y: auto;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(48, 46, 46);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#add-container {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#parcels-container {
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    gap: 5px;
+}
+
+.parcel {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.parcel.selected {
+    background-color: yellow;
+}
+
+#selected-parcel-container {
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+#selected-parcel {
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* text-align: start; */
+    margin-left: 13rem;
+}
+
+#add-container input,
+#add-container select,
+#add-container button {
+    margin-right: 10px;
+    width: 10rem;
+    height: 2.3rem;
+    background-color: cadetblue;
+    border: none;
+}
+
+.text_containt{
+    box-sizing: border-box;
+    border: 1px solid rgb(173, 161, 161);
+    width: 30rem;
+    height: 15rem;
+    color: rgb(29, 23, 11);
+    background-color: rgb(48, 46, 46);
+}
+
+.contain_box{
+    display: flex;
+    flex-direction: column;
+    color: wheat;
+}
+.main_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.one_div {
+    background-color: #DC143C;
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_div {
+    background-color: #FFD700;
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third_div {
+    background-color: 	#1E90FF;
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .parcels-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: ;
+} */

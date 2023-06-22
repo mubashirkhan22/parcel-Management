@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Management</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <h1>Parcel Management System</h1>
+    <div class="main_div">
+        <div class="one_div">Mumbai</div>
+        <div class="second_div">Delhi</div>
+        <div class="third_div">Kolkata</div>
+    </div>
+
+    <div id="parcels-container"></div>
+
+    <div id="selected-parcel-container">
+        <h2>Selected Parcel :</h2>
+        <p id="selected-parcel"></p>
+    </div>
+
+    <div class="text_containt">
+        <div class="contain_box">
+            <div style="display: flex; justify-content: space-evenly;margin-bottom: 1.5rem;margin-top: 1rem;">
+                <p>Enter Name:</p>
+                <input type="text" id="name-input" placeholder="Enter parcel name">
+            </div>
+            <div style="display: flex; justify-content: space-evenly;margin-top: 1rem;">
+                <p>Select group:</p>
+                <select id="group-select" style="width: 11rem;">
+                    <option value="">Select group</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Kolkata">Kolkata</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-container">
+        <button id="add-after-btn">Add After</button>
+        <button id="add-before-btn">Add Before</button>
+        <button id="replace-btn">Replace</button>
+        <button id="delete-btn">Delete</button>
+        <button id="refresh-btn">Refresh</button>
+        <button id="show-final-btn">Show Final</button>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="one_div">Mumbai</div>
+        <div class="second_div">Delhi</div>
+        <div class="third_div">Kolkata</div>
+    </div>
+    <div id="parcels-container"></div>
+    
+
+    <div class="parceles">
+        <div class="parcel_div">
+            <label for="">Parcel 1</label>
+            <button>1</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 2</label>
+            <button>2</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 3</label>
+            <button>3</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 4</label>
+            <button>4</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 5</label>
+            <button>5</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 6</label>
+            <button>6</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 7</label>
+            <button>7</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 8</label>
+            <button>8</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 9</label>
+            <button>9</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 10</label>
+            <button>10</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 11</label>
+            <button>11</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 12</label>
+            <button>12</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 13</label>
+            <button>13</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 14</label>
+            <button>14</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 15</label>
+            <button>15</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 16</label>
+            <button>16</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 17</label>
+            <button>17</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 18</label>
+            <button>18</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 19</label>
+            <button>19</button>
+        </div>
+        <div class="parcel_div">
+            <label for="">Parcel 20</label>
+            <button>20</button>
+        </div>
+    </div>
+    <div id="add-container">
+        <input type="text" id="name-input" placeholder="Enter parcel name">
+        <select id="group-select">
+            <option value="">Select group</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Kolkata">Kolkata</option>
+        </select>
+        <button id="add-after-btn">Add After</button>
+        <button id="add-before-btn">Add Before</button>
+        <button id="replace-btn">Replace</button>
+        <button id="delete-btn">Delete</button>
+        <button id="refresh-btn">Refresh</button>
+        <button id="show-final-btn">Show Final</button>
+    </div>
+    
+  <!-- <script>
+    var data = [
+      { id: 10, name: "PARCEL1", sequence: 1, group: "Mumbai" },
+      { id: 11, name: "PARCEL2", sequence: 2, group: "Mumbai" },
+      { id: 13, name: "PARCEL3", sequence: 3, group: "Mumbai" },
+      { id: 19, name: "PARCEL4", sequence: 4, group: "Delhi" },
+      { id: 18, name: "PARCEL5", sequence: 5, group: "Delhi" },
+      { id: 21, name: "PARCEL6", sequence: 6, group: "Kolkata" },
+      { id: 12, name: "PARCEL7", sequence: 7, group: "Kolkata" },
+      { id: 22, name: "PARCEL8", sequence: 8, group: "Kolkata" },
+      { id: 23, name: "PARCEL9", sequence: 9, group: "Kolkata" },
+      { id: 24, name: "PARCEL10", sequence: 10, group: "Mumbai" },
+      { id: 25, name: "PARCEL11", sequence: 11, group: "Mumbai" },
+      { id: 31, name: "PARCEL12", sequence: 12, group: "Mumbai" },
+      { id: 34, name: "PARCEL13", sequence: 13, group: "Mumbai" },
+      { id: 35, name: "PARCEL14", sequence: 14, group: "Delhi" },
+      { id: 41, name: "PARCEL15", sequence: 15, group: "Delhi" },
+      { id: 42, name: "PARCEL16", sequence: 16, group: "Delhi" },
+      { id: 43, name: "PARCEL17", sequence: 17, group: "Delhi" },
+      { id: 44, name: "PARCEL18", sequence: 18, group: "Kolkata" },
+      { id: 53, name: "PARCEL19", sequence: 19, group: "Kolkata" },
+      { id: 57, name: "PARCEL20", sequence: 20, group: "Kolkata" }
+    ];
+
+    var buttonContainer = document.getElementById("button-container");
+
+    data.forEach(function(parcel) {
+      var button = document.createElement("button");
+      button.innerText = parcel.name;
+      button.classList.add("button");
+      button.style.backgroundColor = getGroupColor(parcel.group);
+
+      buttonContainer.appendChild(button);
+    });
+
+    function getGroupColor(group) {
+      // Define your color mapping logic here based on the group
+      if (group === "Mumbai") return "lightblue";
+      if (group === "Delhi") return "lightgreen";
+      if (group === "Kolkata") return "lightyellow";
+    }
+  </script> -->
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Parcel Management System</h1>
+
+    <div id="add-container">
+        <input type="text" id="name-input" placeholder="Enter parcel name">
+        <select id="group-select">
+            <option value="">Select group</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Kolkata">Kolkata</option>
+        </select>
+        <button id="add-after-btn">Add After</button>
+        <button id="add-before-btn">Add Before</button>
+        <button id="replace-btn">Replace</button>
+        <button id="delete-btn">Delete</button>
+        <button id="refresh-btn">Refresh</button>
+        <button id="show-final-btn">Show Final</button>
+    </div>
+
+    <div id="parcels-container"></div>
+
+    <div id="selected-parcel-container">
+        <h2>Selected Parcel</h2>
+        <p id="selected-parcel"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html> --> -->
